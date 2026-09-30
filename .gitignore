@@ -1,0 +1,57 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Virtual environments
+.venv/
+venv/
+env/
+.env
+.env.*
+!.env.example
+
+# Local runtime data
+# Keep demo/sample assets in samples/, not data/.
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# OCR / RAG generated artifacts
+uploads/
+processed/
+text_regions/
+chroma/
+chromadb/
+vector_store/
+models/
+*.onnx
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+
+# Logs and temporary files
+logs/
+*.log
+tmp/
+temp/
+.cache/
+
+# OS / editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Streamlit local state
+.streamlit/secrets.toml
+
+# Docker local overrides
+docker-compose.override.yml

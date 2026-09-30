@@ -1,0 +1,15 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_STORAGE_DIR=/app/data/uploads
+      - APP_DATABASE_PATH=/app/data/documents.db
+      - APP_OCR_ENGINE=tesseract
+      - APP_LLM_ENGINE=rule_based
+      - APP_VECTOR_STORE=memory
+      - APP_VECTOR_STORE_DIR=/app/data/chroma
+      - OPENAI_MODEL=gpt-4o-mini
+    volumes:
+      - ./data:/app/data
